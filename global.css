@@ -1,0 +1,112 @@
+:root {
+  --main-bg-color: #fff;
+	--main-complement: rgb(224, 224, 224);
+	--main-bg-second: rgb(236, 236, 236);
+	--main-dark: #555;
+	--main-text: #000;
+	--main-vivid: rgb(128, 185, 235);
+	--main-vivid-dark: rgb(100, 164, 219);
+}
+
+.radio-container {
+	display: flex;
+	align-items: center;
+}
+
+hr {
+	margin-block-start: 2px;
+  margin-block-end: 2px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-bg-color); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 40px;
+  background: var(--main-vivid); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-vivid-dark); 
+}
+
+html, body {
+	font-size: 20px;
+	font-family: 'Mukta', sans-serif;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+label {
+	display: block;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+input, button, select, textarea {
+	font-size: inherit;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	padding: 0.4em;
+	box-sizing: border-box;
+	border: 0px;
+	border-radius: 5px;
+	outline: none;
+}
+
+input {
+	background-color: var(--main-complement);
+}
+
+.symbol-filled {
+  font-variation-settings:
+  'FILL' 1
+}
+
+.symbol-outlined {
+  font-variation-settings:
+  'FILL' 0
+}
+
+button {
+	color: var(--main-text);
+	background-color: var(--main-bg-second);
+	outline: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: 0.05s ease-out background-color;
+}
+
+button.disabled {
+	cursor: wait !important;
+}
+
+button:not(.disabled):active {
+	background-color: var(--main-complement);
+}
+
+button:focus {
+	border-color: var(--main-complement);
+}
