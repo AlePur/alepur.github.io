@@ -6,11 +6,14 @@
 	--main-text: #000;
 	--main-vivid: rgb(128, 185, 235);
 	--main-vivid-dark: rgb(100, 164, 219);
+	--color-correct: #9aedaa;
+	--color-wrong: #ffafaf;
 }
 
 .radio-container {
 	display: flex;
 	align-items: center;
+	user-select: none;
 }
 
 hr {
@@ -85,12 +88,26 @@ input {
   'FILL' 1
 }
 
+#form {
+	background-color: var(--main-bg-color);
+	font-family: 'Comfortaa', cursive;
+}
+
+#form-wrap {
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
 .symbol-outlined {
   font-variation-settings:
   'FILL' 0
 }
 
 button {
+	user-select: none;
 	color: var(--main-text);
 	background-color: var(--main-bg-second);
 	outline: none;
