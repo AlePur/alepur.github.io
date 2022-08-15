@@ -93,6 +93,10 @@ input {
 	font-family: 'Comfortaa', cursive;
 }
 
+#fonttext {
+	font-family: 'Comfortaa', cursive;
+}
+
 #form-wrap {
 	height: 90px;
 	display: flex;
@@ -107,6 +111,9 @@ input {
 }
 
 button {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	user-select: none;
 	color: var(--main-text);
 	background-color: var(--main-bg-second);
